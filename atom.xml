@@ -6,7 +6,7 @@
   <link href="/GUAiZzz//atom.xml" rel="self"/>
   
   <link href="https://guaizzz.github.io/"/>
-  <updated>2020-07-20T05:51:26.070Z</updated>
+  <updated>2020-07-20T07:30:15.890Z</updated>
   <id>https://guaizzz.github.io/</id>
   
   <author>
@@ -18,10 +18,10 @@
   
   <entry>
     <title>1 Week in Poizon</title>
-    <link href="https://guaizzz.github.io/2020/07/16/1/"/>
-    <id>https://guaizzz.github.io/2020/07/16/1/</id>
+    <link href="https://guaizzz.github.io/2020/07/16/django/"/>
+    <id>https://guaizzz.github.io/2020/07/16/django/</id>
     <published>2020-07-16T10:31:13.000Z</published>
-    <updated>2020-07-20T05:51:26.070Z</updated>
+    <updated>2020-07-20T07:30:15.890Z</updated>
     
     <content type="html"><![CDATA[<p>在循环range中，所有循环都是从0为起点。<br><strong>安装django</strong><br>在安装django前先安装python<br>[python] (<a href="https://www.python.org/getit/" target="_blank" rel="noopener">https://www.python.org/getit/</a>)<br>在python的pip来对django进行驱动</p>]]></content>
     
@@ -35,6 +35,8 @@
     </summary>
     
     
+    
+      <category term="实习" scheme="https://guaizzz.github.io/tags/%E5%AE%9E%E4%B9%A0/"/>
     
   </entry>
   
