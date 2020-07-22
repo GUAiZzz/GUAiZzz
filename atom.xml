@@ -6,7 +6,7 @@
   <link href="/GUAiZzz//atom.xml" rel="self"/>
   
   <link href="https://guaizzz.github.io/"/>
-  <updated>2020-07-22T03:23:01.711Z</updated>
+  <updated>2020-07-22T03:25:27.713Z</updated>
   <id>https://guaizzz.github.io/</id>
   
   <author>
@@ -17,23 +17,34 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>static</title>
+    <link href="https://guaizzz.github.io/2020/07/22/static/"/>
+    <id>https://guaizzz.github.io/2020/07/22/static/</id>
+    <published>2020-07-22T03:25:27.000Z</published>
+    <updated>2020-07-22T03:25:27.713Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
     <title>2 Week in Poizon</title>
     <link href="https://guaizzz.github.io/2020/07/21/week%202/"/>
     <id>https://guaizzz.github.io/2020/07/21/week%202/</id>
     <published>2020-07-20T16:00:00.000Z</published>
-    <updated>2020-07-22T03:23:01.711Z</updated>
+    <updated>2020-07-22T03:27:18.861Z</updated>
     
-    <content type="html"><![CDATA[<p><strong>django 静态文件404（问题解决）</strong></p><ol><li>在总文件夹下创立新的static</li><li>将需要放置的静态文件/图片放入新创建的static而不是子程序的static里</li><li>将setting中的路径改成 <import os.path></li><li>用Debugger 再次刷新重启网页</li></ol>]]></content>
+    <content type="html"><![CDATA[<h1 id="django-静态文件404（问题解决）"><a href="#django-静态文件404（问题解决）" class="headerlink" title="django 静态文件404（问题解决）"></a>django 静态文件404（问题解决）</h1><h2 id="在总文件夹下创立新的static"><a href="#在总文件夹下创立新的static" class="headerlink" title="在总文件夹下创立新的static"></a>在总文件夹下创立新的static</h2><h2 id="将需要放置的静态文件-图片放入新创建的static而不是子程序的static里"><a href="#将需要放置的静态文件-图片放入新创建的static而不是子程序的static里" class="headerlink" title="将需要放置的静态文件/图片放入新创建的static而不是子程序的static里"></a>将需要放置的静态文件/图片放入新创建的static而不是子程序的static里</h2><h2 id="将setting中的路径改成"><a href="#将setting中的路径改成" class="headerlink" title="将setting中的路径改成 "></a>将setting中的路径改成 <import os.path></h2><h2 id="用Debugger-再次刷新重启网页"><a href="#用Debugger-再次刷新重启网页" class="headerlink" title="用Debugger 再次刷新重启网页"></a>用Debugger 再次刷新重启网页</h2>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;p&gt;&lt;strong&gt;django 静态文件404（问题解决）&lt;/strong&gt;&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;在总文件夹下创立新的static&lt;/li&gt;
-&lt;li&gt;将需要放置的静态文件/图片放入新创建的static而不是子程序的static里&lt;/li&gt;
-&lt;li&gt;将setting中的路
+        &lt;h1 id=&quot;django-静态文件404（问题解决）&quot;&gt;&lt;a href=&quot;#django-静态文件404（问题解决）&quot; class=&quot;headerlink&quot; title=&quot;django 静态文件404（问题解决）&quot;&gt;&lt;/a&gt;django 静态文件404（问题解决）&lt;/h1&gt;&lt;
       
     
     </summary>

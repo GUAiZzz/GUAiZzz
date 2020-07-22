@@ -4,11 +4,24 @@
   
   
   <entry>
+    <title>static</title>
+    <link href="/GUAiZzz/2020/07/22/static/"/>
+    <url>/GUAiZzz/2020/07/22/static/</url>
+    
+    <content type="html"><![CDATA[]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>2 Week in Poizon</title>
     <link href="/GUAiZzz/2020/07/21/week%202/"/>
     <url>/GUAiZzz/2020/07/21/week%202/</url>
     
-    <content type="html"><![CDATA[<p><strong>django 静态文件404（问题解决）</strong></p><ol><li>在总文件夹下创立新的static</li><li>将需要放置的静态文件/图片放入新创建的static而不是子程序的static里</li><li>将setting中的路径改成 <import os.path></li><li>用Debugger 再次刷新重启网页</li></ol>]]></content>
+    <content type="html"><![CDATA[<h1 id="django-静态文件404（问题解决）"><a href="#django-静态文件404（问题解决）" class="headerlink" title="django 静态文件404（问题解决）"></a>django 静态文件404（问题解决）</h1><h2 id="在总文件夹下创立新的static"><a href="#在总文件夹下创立新的static" class="headerlink" title="在总文件夹下创立新的static"></a>在总文件夹下创立新的static</h2><h2 id="将需要放置的静态文件-图片放入新创建的static而不是子程序的static里"><a href="#将需要放置的静态文件-图片放入新创建的static而不是子程序的static里" class="headerlink" title="将需要放置的静态文件/图片放入新创建的static而不是子程序的static里"></a>将需要放置的静态文件/图片放入新创建的static而不是子程序的static里</h2><h2 id="将setting中的路径改成"><a href="#将setting中的路径改成" class="headerlink" title="将setting中的路径改成 "></a>将setting中的路径改成 <import os.path></h2><h2 id="用Debugger-再次刷新重启网页"><a href="#用Debugger-再次刷新重启网页" class="headerlink" title="用Debugger 再次刷新重启网页"></a>用Debugger 再次刷新重启网页</h2>]]></content>
     
     
     
