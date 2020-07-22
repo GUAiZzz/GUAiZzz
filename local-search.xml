@@ -4,6 +4,25 @@
   
   
   <entry>
+    <title>2 Week in Poizon</title>
+    <link href="/GUAiZzz/2020/07/21/week%202/"/>
+    <url>/GUAiZzz/2020/07/21/week%202/</url>
+    
+    <content type="html"><![CDATA[<p><strong>django 静态文件404（问题解决）</strong></p><ol><li>在总文件夹下创立新的static</li><li>将需要放置的静态文件/图片放入新创建的static而不是子程序的static里</li><li>将setting中的路径改成 <import os.path></li><li>用Debugger 再次刷新重启网页</li></ol>]]></content>
+    
+    
+    
+    <tags>
+      
+      <tag>实习</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>1 Week in Poizon</title>
     <link href="/GUAiZzz/2020/07/16/django/"/>
     <url>/GUAiZzz/2020/07/16/django/</url>

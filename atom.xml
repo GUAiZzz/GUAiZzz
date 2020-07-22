@@ -6,7 +6,7 @@
   <link href="/GUAiZzz//atom.xml" rel="self"/>
   
   <link href="https://guaizzz.github.io/"/>
-  <updated>2020-07-20T07:30:15.890Z</updated>
+  <updated>2020-07-22T03:23:01.711Z</updated>
   <id>https://guaizzz.github.io/</id>
   
   <author>
@@ -17,11 +17,39 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>2 Week in Poizon</title>
+    <link href="https://guaizzz.github.io/2020/07/21/week%202/"/>
+    <id>https://guaizzz.github.io/2020/07/21/week%202/</id>
+    <published>2020-07-20T16:00:00.000Z</published>
+    <updated>2020-07-22T03:23:01.711Z</updated>
+    
+    <content type="html"><![CDATA[<p><strong>django 静态文件404（问题解决）</strong></p><ol><li>在总文件夹下创立新的static</li><li>将需要放置的静态文件/图片放入新创建的static而不是子程序的static里</li><li>将setting中的路径改成 <import os.path></li><li>用Debugger 再次刷新重启网页</li></ol>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;strong&gt;django 静态文件404（问题解决）&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;在总文件夹下创立新的static&lt;/li&gt;
+&lt;li&gt;将需要放置的静态文件/图片放入新创建的static而不是子程序的static里&lt;/li&gt;
+&lt;li&gt;将setting中的路
+      
+    
+    </summary>
+    
+    
+    
+      <category term="实习" scheme="https://guaizzz.github.io/tags/%E5%AE%9E%E4%B9%A0/"/>
+    
+  </entry>
+  
+  <entry>
     <title>1 Week in Poizon</title>
     <link href="https://guaizzz.github.io/2020/07/16/django/"/>
     <id>https://guaizzz.github.io/2020/07/16/django/</id>
     <published>2020-07-16T10:31:13.000Z</published>
-    <updated>2020-07-20T07:30:15.890Z</updated>
+    <updated>2020-07-22T03:23:12.660Z</updated>
     
     <content type="html"><![CDATA[<p>在循环range中，所有循环都是从0为起点。<br><strong>安装django</strong><br>在安装django前先安装python<br>[python] (<a href="https://www.python.org/getit/" target="_blank" rel="noopener">https://www.python.org/getit/</a>)<br>在python的pip来对django进行驱动</p>]]></content>
     
