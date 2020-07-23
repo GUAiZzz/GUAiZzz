@@ -6,7 +6,7 @@
   <link href="/GUAiZzz//atom.xml" rel="self"/>
   
   <link href="https://guaizzz.github.io/"/>
-  <updated>2020-07-22T03:25:27.713Z</updated>
+  <updated>2020-07-23T09:19:11.425Z</updated>
   <id>https://guaizzz.github.io/</id>
   
   <author>
@@ -17,17 +17,26 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>static</title>
-    <link href="https://guaizzz.github.io/2020/07/22/static/"/>
-    <id>https://guaizzz.github.io/2020/07/22/static/</id>
+    <title>AJAX 配合使用 js</title>
+    <link href="https://guaizzz.github.io/2020/07/22/AJAX/"/>
+    <id>https://guaizzz.github.io/2020/07/22/AJAX/</id>
     <published>2020-07-22T03:25:27.000Z</published>
-    <updated>2020-07-22T03:25:27.713Z</updated>
+    <updated>2020-07-23T09:19:11.425Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="AJAX"><a href="#AJAX" class="headerlink" title="AJAX"></a>AJAX</h1><h3 id="Ajax-网站内部的中转器"><a href="#Ajax-网站内部的中转器" class="headerlink" title="Ajax = 网站内部的中转器"></a>Ajax = 网站内部的中转器</h3><h3 id="在创立了数据之后，引入js-或-html中"><a href="#在创立了数据之后，引入js-或-html中" class="headerlink" title="在创立了数据之后，引入js 或 html中"></a>在创立了数据之后，引入js 或 html中</h3><h3 id="输入进搜索框中，答案自动会弹出"><a href="#输入进搜索框中，答案自动会弹出" class="headerlink" title="输入进搜索框中，答案自动会弹出"></a>输入进搜索框中，答案自动会弹出</h3>]]></content>
     
     <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;AJAX&quot;&gt;&lt;a href=&quot;#AJAX&quot; class=&quot;headerlink&quot; title=&quot;AJAX&quot;&gt;&lt;/a&gt;AJAX&lt;/h1&gt;&lt;h3 id=&quot;Ajax-网站内部的中转器&quot;&gt;&lt;a href=&quot;#Ajax-网站内部的中转器&quot; class=&quot;headerlink
+      
     
     </summary>
     
     
+    
+      <category term="实习" scheme="https://guaizzz.github.io/tags/%E5%AE%9E%E4%B9%A0/"/>
     
   </entry>
   
