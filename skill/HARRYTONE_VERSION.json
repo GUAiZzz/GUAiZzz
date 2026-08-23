@@ -1,0 +1,22 @@
+{
+  "repository": "GUAiZzz/harry-tone",
+  "branch": "main",
+  "commit": "13cd6b7046bd81be396810d2923f3a5dc818e93f",
+  "required_files": [
+    "SKILL.md",
+    "references/source-guide.md",
+    "references/anti-ai-patterns.md"
+  ],
+  "complete_reference_set_verified": true,
+  "verified_reference_files": [
+    "references/anti-ai-patterns.md",
+    "references/chat-writing.md",
+    "references/portable-prompt.md",
+    "references/product-rules.md",
+    "references/rewriting.md",
+    "references/social-content.md",
+    "references/source-guide.md",
+    "references/work-writing.md"
+  ],
+  "note": "This pin records the HarryTone source used to bootstrap the Codex migration workspace. Production should resolve and record the current canonical commit at run time rather than assuming this pin is forever latest."
+}
