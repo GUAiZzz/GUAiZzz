@@ -8,19 +8,16 @@ Scope: documentation/schema only. No production code, workflow, or `gh-pages` ch
 
 ### Problem
 
-Two representations of Production Contract v2 exist: the legacy Library document and `docs/PRODUCTION_CONTRACT_V2.md`. Leaving both independently "canonical" creates silent drift.
+Two different representations currently carry the label Production Contract v2: the legacy Library document `Culture & Taste Daily — Production Prompt v2` / `Pasted markdown.md`, and the migration document `docs/PRODUCTION_CONTRACT_V2.md`. They are not a byte-for-byte mirror: the Library v2 includes local archive-path and artifact-delivery requirements, while the repository document adapts parts of the contract toward the GitHub migration. Calling both canonical would create silent drift.
 
 ### Decision
 
-Use a one-way cutover:
-
-1. The Library document is the **historical source snapshot** from which the repository copy was migrated.
-2. During this audit-baseline PR, compare the repository copy against the Library source and record any material differences. No silent merge of conflicting rules is allowed.
-3. Once this baseline is approved, `docs/PRODUCTION_CONTRACT_V2.md` becomes the **canonical version-controlled Culture & Taste production contract for migration and future production**.
-4. After cutover, future contract changes happen by versioned Git commit/PR with a decision note. The Library copy may remain as an archive/reference but may not override the repository contract by timestamp alone.
-5. HarryTone remains separately canonical in `GUAiZzz/harry-tone`; the production contract must never impersonate or fork HarryTone.
-
-Until step 3 is approved, any material conflict between the two contract copies is **BLOCKED** and must be surfaced explicitly.
+1. The Library document remains the **canonical historical Production Contract v2** for the existing system until an explicit version-controlled successor is approved.
+2. `docs/PRODUCTION_CONTRACT_V2.md` is a **migration adaptation / draft successor**, not an independent canonical v2. It must not silently override the Library v2.
+3. Before production cutover, reconcile the two deliberately and create a new versioned repository contract (recommended name: `PRODUCTION_CONTRACT_V3.md`) with a short migration note listing intentional changes. Do not pretend an adapted contract is an exact v2 mirror.
+4. Once v3 is approved, the repository contract becomes canonical for Culture & Taste production. Future changes happen by Git commit/PR and version/decision log; the Library v2 becomes a frozen historical reference.
+5. Until v3 approval, a material conflict between Library v2 and the migration adaptation is **BLOCKED**. Preserve the stricter truth/accessibility/privacy requirement rather than weakening a rule by accident.
+6. HarryTone remains separately canonical in `GUAiZzz/harry-tone`; the production contract must never impersonate or fork HarryTone.
 
 ## Decision 1 — Repository boundary
 
