@@ -1,6 +1,10 @@
 # Culture & Taste Daily — Production Contract v2
 
-This file version-controls the current production contract used by the Culture & Taste Daily system. It is migrated from the canonical Library document titled `Culture & Taste Daily — Production Prompt v2` audited on 2026-08-23.
+> [!WARNING]
+> **NON-CANONICAL MIGRATION ADAPTATION — DO NOT USE AS PRODUCTION AUTHORITY.**  
+> The canonical historical v2 remains the Library document `Culture & Taste Daily — Production Prompt v2` / `Pasted markdown.md`. This repository file is an adapted migration draft and is intentionally **not** a byte-for-byte mirror. It must be reconciled with the Library v2 into an explicitly reviewed `PRODUCTION_CONTRACT_V3.md` before the repository contract can become canonical. Until then, any material unresolved conflict is `BLOCKED`; this file must not silently override Library v2.
+
+This file is preserved as the current repository-side migration adaptation audited on 2026-08-23. Its body remains useful for migration analysis, but its presence in Git does not make it the canonical production contract.
 
 ## 1. Authority and run order
 

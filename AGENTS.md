@@ -8,9 +8,10 @@ Before changing Culture & Taste Daily code or editorial behavior:
 
 1. Read `docs/NORTH_STAR.md`.
 2. Read `docs/CURRENT_STATE.md`.
-3. Read `docs/UPGRADE_PLAN.md`.
-4. Read `docs/PRODUCTION_CONTRACT_V2.md` when present; until then, do not weaken any production rules summarized in the docs above.
-5. Read the canonical private repository `GUAiZzz/harry-tone`, especially `SKILL.md`, `references/source-guide.md`, and for post-draft review `references/anti-ai-patterns.md`.
+3. Read `docs/ARCHITECTURE_DECISIONS.md` when present.
+4. Read `docs/UPGRADE_PLAN.md`.
+5. Read `docs/PRODUCTION_CONTRACT_V2.md` as the current migration adaptation, while respecting the contract-authority rule below.
+6. Read the canonical private repository `GUAiZzz/harry-tone`, especially `SKILL.md`, `references/source-guide.md`, and for post-draft review `references/anti-ai-patterns.md`.
 
 ## Source-of-truth rules
 
@@ -18,11 +19,15 @@ Before changing Culture & Taste Daily code or editorial behavior:
 - HarryTone governs judgment, reasoning, truth boundaries, speaking position, voice, and anti-AI revision.
 - Culture & Taste visual/editorial publication behavior is an additional system layered on HarryTone. Do not pretend the writing skill alone contains the visual system.
 - Historical issues are evidence and archive objects. Do not normalize them into one fixed visual template.
+- The Library `Culture & Taste Daily — Production Prompt v2` is the canonical historical v2 until a reconciled version-controlled successor is explicitly approved.
+- `docs/PRODUCTION_CONTRACT_V2.md` is currently a migration adaptation/draft successor, not permission to silently override Library v2. A material conflict is BLOCKED until resolved.
+- Private source-ledger instances must never be committed to a public repository or Pages artifact. Public manifests contain publishable provenance only.
 
 ## Production safety
 
 - Do not write directly to the live `gh-pages` branch while working on the migration.
-- Prefer source → deterministic validation → build → deploy.
+- The current direct-publish daily automation is paused and must remain paused until the documented automation gate is satisfied.
+- Prefer source → deterministic validation → build artifact → deploy → smoke test.
 - A failed validation must leave the previous production site untouched.
 - Never require JavaScript merely to expose the article text, sources, or basic reading path.
 - Mobile is a deliberate translation, not mechanical stacking of desktop layers.
@@ -47,7 +52,7 @@ The documented architecture is the strongest current proposal, not permanent doc
 - why it is better;
 - tradeoffs and migration cost;
 - risks;
-- how it preserves HarryTone, editorial authorship, daily variation, accessibility, archive integrity, deterministic QA, and fail-closed deployment.
+- how it preserves HarryTone, editorial authorship, daily variation, accessibility, archive integrity, privacy, deterministic QA, and fail-closed deployment.
 
 Then recommend whether to adopt it.
 
