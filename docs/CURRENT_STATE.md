@@ -60,10 +60,10 @@ The old prompt remains useful as editorial-generation input, but its direct-publ
 
 Two representations currently exist:
 
-1. the legacy Library document `Culture & Taste Daily — Production Prompt v2` / `Pasted markdown.md`;
-2. the version-controlled migration copy `docs/PRODUCTION_CONTRACT_V2.md`.
+1. the Library document `Culture & Taste Daily — Production Prompt v2` / `Pasted markdown.md`;
+2. the repository migration document `docs/PRODUCTION_CONTRACT_V2.md`.
 
-The Library document is the historical source used to create the repository copy. For migration work, `docs/PRODUCTION_CONTRACT_V2.md` is the reviewable candidate canonical contract. The authority/cutover rule is defined in `docs/ARCHITECTURE_DECISIONS.md` and in the contract header itself. Until that baseline is approved, neither copy may silently override the other.
+They are not a byte-for-byte mirror. The Library v2 remains the canonical historical v2 for the existing system. The repository document is a migration adaptation/draft successor and must not silently override it. Before production cutover, the two must be deliberately reconciled into a new version-controlled successor (recommended `PRODUCTION_CONTRACT_V3.md`). After v3 approval, the repository version becomes canonical and the Library v2 becomes a frozen historical reference. See `docs/ARCHITECTURE_DECISIONS.md`.
 
 ## Three design teachers
 
