@@ -1,88 +1,94 @@
 # Culture & Taste Daily — Current State
 
-Last audited: 2026-08-23.
+Last audited: 2026-08-23 22:51 Asia/Shanghai.
+
+## Audit verdict
+
+- GitHub Pages as a static publication target: **GO**.
+- Direct daily writes into the deployed `gh-pages` branch: **BLOCKED**.
+- Migration project: **REVISE**, then continue incrementally.
 
 ## Repositories
 
 ### `GUAiZzz/GUAiZzz`
 
-This is an older GitHub Pages / blog repository. The current Culture & Taste experiment lives on the `gh-pages` branch under:
+This is an older public GitHub Pages/blog repository. The current Culture & Taste experiment lives on the production `gh-pages` branch under `culture-taste-daily/`.
 
-`culture-taste-daily/`
-
-Known current structure:
+Known production structure includes:
 
 - `culture-taste-daily/index.html`
 - `culture-taste-daily/2026-08-20/`
 - `culture-taste-daily/2026-08-21/`
 
-The live archive migration should be considered provisional, not production-complete.
+The live archive migration is provisional, not production-complete.
 
-Known migration defect: 8/20 and 8/21 currently expose a small loader `index.html` that fetches several `.txt` fragments with JavaScript and reconstructs the archived HTML at runtime. If JavaScript fails, the article is not exposed. This conflicts with the publication requirement that the full reading path, sources, and article order remain accessible without JavaScript.
+Known migration defect: 8/20 and 8/21 use a small loader `index.html` that fetches `.txt` fragments with JavaScript and reconstructs archived HTML at runtime. If JavaScript fails, the article is not exposed. This violates the production contract's progressive-enhancement requirement.
 
-The current archive homepage is also manually hardcoded rather than generated from issue manifests.
+The archive homepage is manually hardcoded rather than generated from issue manifests.
+
+`codex/culture-taste-system-v3` is the safe migration workspace. `audit-baseline-v1` is a documentation/schema-only child branch used to resolve audit blockers. Neither branch is production.
 
 ### `GUAiZzz/harry-tone`
 
 Private repository. This is the canonical HarryTone source of truth.
 
-Known current contents:
+The previously reported missing `references/social-content.md` has been restored. The current latest verified `main` commit at this audit is:
 
-- `SKILL.md`
-- `agents/openai.yaml`
-- `references/source-guide.md`
-- `references/anti-ai-patterns.md`
-- `references/chat-writing.md`
-- `references/portable-prompt.md`
-- `references/product-rules.md`
-- `references/rewriting.md`
-- `references/work-writing.md`
+`13cd6b7046bd81be396810d2923f3a5dc818e93f` — `Restore missing HarryTone social content guide`.
 
-Known mismatch: the recovered original HarryTone archive also contained `references/social-content.md`. That file is currently missing from the GitHub mirror. Do not call the mirror complete until this mismatch is resolved.
+The current canonical set includes `SKILL.md`, `agents/openai.yaml`, and all eight recovered reference files. Do not describe a pinned snapshot as "latest" without checking the canonical repository at runtime.
 
-## Historical publication artifacts known to exist outside this branch
+## Historical publication artifacts known outside production GitHub
 
 At minimum:
 
-- 2026-08-20: original full HarryTone HTML exists in the user's file library.
+- 2026-08-20: original full HarryTone HTML exists.
 - 2026-08-21: original `HARRYTONE_LATEST` full HTML exists, plus ZIP and desktop/mobile preview artifacts.
-- 2026-08-22: a 4.37 MB PDF is known to exist; do not assume the original HTML is unavailable until searched for explicitly.
+- 2026-08-22: a PDF exists; original HTML/source must be searched for before reconstruction.
 
-Do not redesign these old issues during migration. Preserve their editorial text, art direction, color world, typography behavior, image behavior, visual pacing, and source links. Fix only reliability/accessibility/migration defects unless a redesign is explicitly requested.
+Migration must preserve editorial text, art direction, color world, typography behavior, image behavior, pacing, and source links. Do not normalize historical issues into one template.
 
 ## Current automation
 
-A daily ChatGPT automation exists for Culture & Taste Daily. It has been updated to require the latest HarryTone repository files before publishing and to publish to GitHub Pages rather than `chatgpt.site`.
+The ChatGPT automation `Culture & Taste GitHub Daily` previously targeted direct writes to `GUAiZzz/GUAiZzz:gh-pages/culture-taste-daily/`.
 
-However, the automation currently still writes toward the deployed `gh-pages` model. The target architecture should separate generation from deterministic validation and deployment.
+Because the audit classifies direct daily auto-publish as BLOCKED, that automation was **paused on 2026-08-23 before the next scheduled run**. It must remain paused until the automation gate in `docs/ARCHITECTURE_DECISIONS.md` is satisfied.
 
-## Current production-contract location
+The old prompt remains useful as editorial-generation input, but its direct-publish instructions are not an approved deployment path.
 
-The canonical current contract is `Culture & Taste Daily — Production Prompt v2`, currently stored in the user's file library as a Markdown file rather than version-controlled alongside the website.
+## Production-contract authority
 
-This is a source-of-truth risk. The full contract should be copied into version control before production cutover.
+Two representations currently exist:
+
+1. the legacy Library document `Culture & Taste Daily — Production Prompt v2` / `Pasted markdown.md`;
+2. the version-controlled migration copy `docs/PRODUCTION_CONTRACT_V2.md`.
+
+The Library document is the historical source used to create the repository copy. For migration work, `docs/PRODUCTION_CONTRACT_V2.md` is the reviewable candidate canonical contract. The authority/cutover rule is defined in `docs/ARCHITECTURE_DECISIONS.md` and in the contract header itself. Until that baseline is approved, neither copy may silently override the other.
 
 ## Three design teachers
 
-The established references are:
-
 1. Codrops / Webzibition — authorship, world-building, concept concentration.
-   - https://tympanus.net/codrops/webzibition/page/2/
 2. Behance UI/UX — dramatic presentation and intentional viewing sequence.
-   - https://www.behance.net/galleries/ui-ux/ui-ux
 3. Mobbin — real product grammar, usability, and interaction clarity.
-   - https://mobbin.com/discover/apps/web/latest
 
-They are complementary teachers, not templates to imitate.
+They are complementary teachers, not templates.
 
-## What is explicitly NOT verified yet
+## Privacy boundary
 
-- The existing migrated 8/20 and 8/21 pages do not qualify as PASS-grade historical web issues yet.
-- Embedded original image assets are not fully restored in the migrated web versions.
-- 8/22 has not yet been migrated into a verified web issue.
-- The current deployed Culture & Taste setup does not yet have independent deterministic CI enforcing the production contract.
-- A dedicated `culture-taste-daily` repository has not yet been created from this environment.
+The production contract requires a private source ledger and also requires visible reader-facing Sources & Dates. These are not the same artifact.
 
-## Safety rule for this branch
+A public GitHub Pages/source repository must never contain private research notes, internal QA scaffolding, internal scoring, or unpublished editorial inference. Public issue manifests contain only publishable provenance/metadata. The private source ledger stays outside the public repository. Schemas for both sides may be version-controlled publicly; private ledger instances may not.
 
-`codex/culture-taste-system-v3` is a planning and migration workspace. Do not merge it into `gh-pages` or use it to change the live site until the migration has a test plan, rollback plan, and verified deployment path.
+## Explicitly not verified / not complete
+
+- 8/20 and 8/21 are not PASS-grade historical web issues yet.
+- Original visual assets are not fully restored in migrated web versions.
+- 8/22 has not been migrated into a verified web issue.
+- No independent deterministic CI currently enforces the production contract.
+- No dedicated `culture-taste-daily` source repository has been cut over.
+- No approved Pages build-artifact workflow exists yet.
+- Daily production automation is paused pending the new gate.
+
+## Safety rule
+
+Do not modify `culture-taste-daily/`, add deployment workflows, merge to `gh-pages`, or alter the live site from the audit-baseline PR. The next change must remain documentation/schema-only and reversible.
