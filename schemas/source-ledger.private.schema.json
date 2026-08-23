@@ -1,0 +1,53 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:culture-taste-daily:source-ledger.private:v1",
+  "title": "Culture & Taste Daily Private Source Ledger",
+  "description": "Schema only. Instances are private generation artifacts and MUST NOT be committed to a public repository or included in a GitHub Pages artifact.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "visibility", "publication_date", "created_at", "stories"],
+  "properties": {
+    "schema_version": { "const": 1 },
+    "visibility": { "const": "private" },
+    "publication_date": { "type": "string", "format": "date" },
+    "created_at": { "type": "string", "format": "date-time" },
+    "stories": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["story_id", "provisional_level", "sources", "status"],
+        "properties": {
+          "story_id": { "type": "string", "minLength": 1 },
+          "provisional_level": { "enum": ["cover", "major", "signal", "watch", "candidate"] },
+          "status": { "enum": ["selected", "rejected", "hold", "needs_verification"] },
+          "selection_or_rejection_reason": { "type": ["string", "null"] },
+          "sources": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["title", "publisher", "url", "source_type", "accessed_at", "established_facts"],
+              "properties": {
+                "title": { "type": "string" },
+                "publisher": { "type": "string" },
+                "url": { "type": "string", "format": "uri" },
+                "source_type": { "enum": ["primary_official", "independent_editorial", "direct_community"] },
+                "published_date": { "type": ["string", "null"] },
+                "event_date": { "type": ["string", "null"] },
+                "accessed_at": { "type": "string", "format": "date-time" },
+                "established_facts": { "type": "array", "items": { "type": "string" } },
+                "editorial_inferences": { "type": "array", "items": { "type": "string" } },
+                "access_limits_or_contradictions": { "type": "array", "items": { "type": "string" } },
+                "image_origin": { "type": ["string", "null"] },
+                "image_credit": { "type": ["string", "null"] },
+                "image_purpose": { "enum": ["documentary", "contextual", "archival", "generated_editorial", "none"] }
+              }
+            }
+          },
+          "internal_notes": { "type": ["string", "null"] }
+        }
+      }
+    }
+  }
+}
