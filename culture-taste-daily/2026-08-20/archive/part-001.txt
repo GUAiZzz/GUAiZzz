@@ -1,0 +1,116 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="archive-migration" content="GitHub Pages text-layout archive; original visuals retained in ChatGPT Library; source-sha256=b4b42d072a36f85a5490d9f1cbc0b0c4b4d148282fe379f4022dd08fb1074fd2"><title>HARRY / Culture & Taste Daily — 20 Aug 2026</title><style>
+:root{
+ --paper:#eee9df;--ink:#11110f;--muted:#6d665d;--line:#9e968b;
+ --blue:#2048ff;--orange:#f24a2b;--acid:#dbff39;--pink:#f0a3b7;
+ --black:#0d0d0c;--green:#526b54;
+}
+*{box-sizing:border-box}
+html{background:#d2ccc1}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:Arial,"Helvetica Neue","PingFang SC","Microsoft YaHei",sans-serif;line-height:1.62}
+.page{max-width:1260px;margin:auto;background:var(--paper);overflow:hidden}
+a{color:inherit}
+img{display:block;width:100%;height:100%;object-fit:cover}
+.top{display:flex;justify-content:space-between;align-items:flex-end;padding:22px 36px 14px;border-bottom:2px solid var(--ink)}
+.brand{font-size:16px;font-weight:800;letter-spacing:-.02em}
+.meta,.mono{font-family:"Courier New",monospace}
+.meta{font-size:10px;line-height:1.35;color:var(--muted);text-align:right;text-transform:uppercase}
+.nav{padding:10px 36px;border-bottom:1px solid var(--line);display:flex;gap:12px;flex-wrap:wrap;font:11px/1 "Courier New",monospace;text-transform:uppercase}
+.nav span:after{content:"·";margin-left:12px;color:var(--orange)}
+.cover{display:grid;grid-template-columns:1.08fr .92fr;min-height:690px;border-bottom:2px solid var(--ink)}
+.cover-copy{padding:55px 36px 34px;display:flex;flex-direction:column;justify-content:space-between}
+.kicker{font:11px/1 "Courier New",monospace;text-transform:uppercase;letter-spacing:.1em;color:var(--orange);margin-bottom:20px}
+h1{font-family:Georgia,"Times New Roman","Songti SC",serif;font-size:clamp(64px,8vw,118px);line-height:.84;letter-spacing:-.055em;font-weight:400;margin:0}
+.deck{font-size:20px;line-height:1.48;max-width:690px;margin-top:31px}
+.cover-note{font:11px/1.6 "Courier New",monospace;color:var(--muted);max-width:680px;padding-top:18px;border-top:1px solid var(--line)}
+.cover-art{display:grid;grid-template-columns:1fr 1fr;grid-template-rows:1.15fr .85fr;gap:6px;background:#111;padding:6px}
+.cover-art .hero-img{grid-row:1/3;position:relative}
+.cover-art .visual{position:relative;overflow:hidden}
+.cap{position:absolute;left:10px;bottom:10px;background:var(--paper);padding:6px 8px;font:9px/1 "Courier New",monospace;text-transform:uppercase;box-shadow:3px 3px 0 #111}
+.poster{height:100%;display:flex;flex-direction:column;justify-content:space-between;padding:28px;background:var(--blue);color:#fff}
+.poster .big{font:400 54px/.92 Georgia,serif;letter-spacing:-.04em}
+.poster .tiny{font:10px/1.4 "Courier New",monospace;text-transform:uppercase}
+.editor-note{display:grid;grid-template-columns:185px 1fr;gap:32px;padding:34px 36px;border-bottom:1px solid var(--line)}
+.editor-note .side{font:10px/1.5 "Courier New",monospace;text-transform:uppercase;color:var(--muted)}
+.editor-note .copy{font:400 29px/1.28 Georgia,"Songti SC",serif;max-width:950px}
+.sec-label{padding:31px 36px 13px;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;align-items:end}
+.sec-label h2{margin:0;font:400 45px/1 Georgia,"Songti SC",serif;letter-spacing:-.03em}
+.sec-label span{font:10px/1 "Courier New",monospace;color:var(--muted);text-transform:uppercase}
+.story{display:grid;grid-template-columns:160px 1fr;gap:34px;padding:50px 36px;border-bottom:1.5px solid var(--ink)}
+.index{font:400 50px/.9 Georgia,serif;color:var(--blue)}
+.index small{display:block;font:10px/1.4 "Courier New",monospace;color:var(--muted);margin-top:15px;text-transform:uppercase}
+.story h3{font:400 41px/1.08 Georgia,"Songti SC",serif;letter-spacing:-.025em;margin:0 0 17px;max-width:950px}
+.lead{font-size:19px;line-height:1.5;max-width:900px;margin-bottom:20px}
+.body{font-size:15px;color:#292621;max-width:850px}
+.body p{margin:0 0 14px}
+.callout{font:400 28px/1.25 Georgia,"Songti SC",serif;max-width:820px;margin:30px 0 8px;padding-left:17px;border-left:5px solid var(--blue)}
+.foot{font:10px/1.45 "Courier New",monospace;color:var(--muted);margin-top:16px}
+.foot a{text-decoration:none;border-bottom:1px solid var(--line)}
+.visual-grid{display:grid;gap:8px;margin:27px 0 11px}
+.visual-grid.two{grid-template-columns:1.1fr .9fr}
+.visual-grid.three{grid-template-columns:1.1fr .8fr .8fr}
+.photo{min-height:320px;position:relative;overflow:hidden;background:#ccc}
+.photo.tall{min-height:470px}
+.ref{position:absolute;top:9px;right:9px;background:#111;color:#fff;padding:5px 7px;font:8px/1 "Courier New",monospace;letter-spacing:.08em}
+.data-poster{min-height:320px;padding:28px;background:#111;color:#fff;display:flex;flex-direction:column;justify-content:space-between}
+.data-poster.light{background:#dad0bd;color:#111}
+.data-poster.pink{background:var(--pink);color:#111}
+.data-poster.acid{background:var(--acid);color:#111}
+.data-poster .mini{font:10px/1.4 "Courier New",monospace;text-transform:uppercase}
+.data-poster .stat{font:400 clamp(36px,5vw,64px)/.95 Georgia,serif;letter-spacing:-.04em}
+.data-poster .sub{font-size:12px;max-width:290px}
+.dark{background:var(--black);color:#f5f0e7}
+.dark .body{color:#d0ccc4}
+.dark .story{border-color:#4b4945}
+.dark .foot{color:#aaa}.dark .foot a{border-color:#666}
+.dark .callout{border-color:var(--acid)}
+.dark .index{color:var(--acid)}
+.split{display:grid;grid-template-columns:1fr 1fr;border-bottom:2px solid var(--ink)}
+.split .pane{padding:46px 36px;min-height:510px}
+.split .pane:first-child{border-right:1px solid var(--ink)}
+.split h3{font:400 42px/1.05 Georgia,"Songti SC",serif;margin:0 0 18px;letter-spacing:-.025em}
+.split p{font-size:15px;max-width:510px}
+.archive-panel{background:#9f3023;color:#fff;position:relative;overflow:hidden;padding:46px 36px}
+.archive-panel .huge{font:400 clamp(54px,7vw,94px)/.86 Georgia,serif;letter-spacing:-.05em}
+.archive-panel .scrap{position:absolute;right:-35px;bottom:-30px;width:50%;height:50%;transform:rotate(-6deg);border:7px solid var(--paper)}
+.radar{display:grid;grid-template-columns:repeat(2,1fr);border-bottom:2px solid var(--ink)}
+.card{padding:34px 36px;border-right:1px solid var(--line);border-bottom:1px solid var(--line);min-height:350px;display:flex;flex-direction:column;justify-content:space-between}
+.card:nth-child(even){border-right:0}
+.card .cat{font:10px/1 "Courier New",monospace;color:var(--orange);text-transform:uppercase;letter-spacing:.08em}
+.card h4{font:400 30px/1.08 Georgia,"Songti SC",serif;margin:12px 0 15px}
+.card p{font-size:14px;color:#33302c;margin:0}
+.card a{font:10px/1 "Courier New",monospace;text-transform:uppercase;text-decoration:none;border-bottom:1px solid var(--line);width:max-content;margin-top:20px}
+.card.visual{padding:0;position:relative;min-height:460px}
+.card.visual .overlay{position:absolute;inset:auto 0 0;padding:80px 30px 28px;background:linear-gradient(transparent,rgba(0,0,0,.88));color:#fff}
+.card.visual .overlay p{color:#e2ddd5}
+.watch{padding:52px 36px;background:#d8cebb;border-bottom:2px solid var(--ink)}
+.watch h2{font:400 49px/1 Georgia,serif;margin:0 0 25px}
+.watch-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:10px}
+.watch-item{border-top:2px solid #111;padding-top:10px}
+.watch-item .date{font:10px/1 "Courier New",monospace;color:var(--orange);text-transform:uppercase}
+.watch-item h5{font-size:14px;margin:8px 0 7px}
+.watch-item p{font-size:12px;color:#514a42;margin:0}
+.close{padding:60px 36px 40px}
+.close .label{font:10px/1 "Courier New",monospace;color:var(--blue);text-transform:uppercase}
+.close .closing{font:400 clamp(35px,5vw,63px)/1.08 Georgia,"Songti SC",serif;letter-spacing:-.035em;max-width:1080px;margin:17px 0 35px}
+.sources{border-top:1px solid var(--line);padding-top:22px;columns:2;column-gap:42px;font-size:11px;color:var(--muted)}
+.sources a{display:block;margin:0 0 9px;text-decoration:none;border-bottom:1px dotted #aaa;width:fit-content}
+.footer{display:flex;justify-content:space-between;padding:17px 36px 30px;font:9px/1 "Courier New",monospace;color:var(--muted);text-transform:uppercase}
+@media(max-width:820px){
+ .top,.nav,.cover-copy,.editor-note,.sec-label,.story,.pane,.watch,.close,.footer{padding-left:20px;padding-right:20px}
+ .cover{grid-template-columns:1fr}.cover-copy{min-height:590px}.cover-art{min-height:620px}
+ .editor-note{grid-template-columns:1fr;gap:11px}.story{grid-template-columns:1fr;gap:13px}
+ .visual-grid.two,.visual-grid.three{grid-template-columns:1fr}
+ .split{grid-template-columns:1fr}.split .pane:first-child{border-right:0;border-bottom:1px solid var(--ink)}
+ .radar{grid-template-columns:1fr}.card{border-right:0}
+ .watch-grid{grid-template-columns:1fr 1fr}.sources{columns:1}
+}
+@media(max-width:520px){
+ .cover-art{grid-template-columns:1fr;grid-template-rows:auto}.cover-art .hero-img{grid-row:auto;min-height:430px}
+ .poster{min-height:340px}.watch-grid{grid-template-columns:1fr}
+}
+</style></head><body><main class="page"><header class="top"><div class="brand">HARRY / CULTURE & TASTE DAILY</div><div class="meta">20 AUG 2026 · ISSUE 004<br>HARRYTONE / EDITED AT 18:58 CST</div></header><div class="nav"><span>City Scene</span><span>Beauty Retail</span><span>Fashion</span><span>Scent</span><span>Objects</span><span>Crossover</span><span>Exhibitions</span><span>Luxury</span><span>Platform Culture</span></div><section class="cover"><div class="cover-copy"><div><div class="kicker">Today / the places where taste is being made</div><h1>CULTURE<br>NEEDS<br>A PLACE.</h1><div class="deck">
+    CDMX 的年轻人聚在一个 local market 做衣服、音乐和电影；Olive Young 把 Seoul 的 shopping logic 搬进 L.A.，今天又进入 500+ 家 Sephora；FKA twigs 和 On 把一次服装合作做成 movement session；Betye Saar 的展览用 200 多件档案把她早年的 costume work 接回艺术史。
+   </div></div><div class="cover-note">
+   这期不找一个统一 aesthetic。材料指向的是更具体的问题：谁在建立能让 taste 被生产、被参与、被保存的场。
+  </div></div><div class="cover-art"><div class="hero-img visual"><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1200' height='800'%3E%3Crect width='100%25' height='100%25' fill='%2323272d'/%3E%3C/svg%3E" alt="editorial reference for city style scene"><span class="ref">EDITORIAL REFERENCE</span><span class="cap">CITY / SCENE</span></div><div class="visual"><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1200' height='800'%3E%3Crect width='100%25' height='100%25' fill='%2323272d'/%3E%3C/svg%3E" alt="editorial reference for movement and fashion"><span class="ref">EDITORIAL REFERENCE</span><span class="cap">BODY / MOVEMENT</span></div><div class="poster"><div class="tiny">20 AUG / TODAY</div><div class="big">500+<br>SEPHORA<br>STORES</div><div class="tiny">OLIVE YOUNG CURATION ENTERS US RETAIL</div></div></div></section><section class="editor-note"><div class="side">EDITOR'S NOTE<br><br>Material before theme.<br>Context before slogan.</div><div class="copy">
+  我会把这期的重心放在「场」上，
