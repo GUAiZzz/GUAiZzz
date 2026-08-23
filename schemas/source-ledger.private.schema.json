@@ -2,7 +2,7 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "urn:culture-taste-daily:source-ledger.private:v1",
   "title": "Culture & Taste Daily Private Source Ledger",
-  "description": "Schema only. Instances are private generation artifacts and MUST NOT be committed to a public repository or included in a GitHub Pages artifact.",
+  "description": "Schema only. Instances are private generation artifacts and MUST NOT be committed to a public repository or included in a GitHub Pages artifact. Image credit is not permission; publishable media must separately record its usage-rights basis when applicable.",
   "type": "object",
   "additionalProperties": false,
   "required": ["schema_version", "visibility", "publication_date", "created_at", "stories"],
@@ -27,7 +27,15 @@
             "items": {
               "type": "object",
               "additionalProperties": false,
-              "required": ["title", "publisher", "url", "source_type", "accessed_at", "established_facts"],
+              "required": [
+                "title",
+                "publisher",
+                "url",
+                "source_type",
+                "accessed_at",
+                "established_facts",
+                "image_usage_basis"
+              ],
               "properties": {
                 "title": { "type": "string" },
                 "publisher": { "type": "string" },
@@ -41,7 +49,28 @@
                 "access_limits_or_contradictions": { "type": "array", "items": { "type": "string" } },
                 "image_origin": { "type": ["string", "null"] },
                 "image_credit": { "type": ["string", "null"] },
-                "image_purpose": { "enum": ["documentary", "contextual", "archival", "generated_editorial", "none"] }
+                "image_purpose": {
+                  "enum": ["documentary", "contextual", "archival", "generated_editorial", "none"]
+                },
+                "image_usage_basis": {
+                  "description": "Operational record of why this image/media may be considered for publication. This field does not itself establish legal permission. Use unknown_do_not_publish when the basis is not verified.",
+                  "enum": [
+                    "official_press_asset",
+                    "licensed",
+                    "permission_granted",
+                    "public_domain",
+                    "open_license",
+                    "generated_editorial",
+                    "editorial_exception_review_required",
+                    "unknown_do_not_publish",
+                    "not_applicable"
+                  ]
+                },
+                "image_usage_evidence_url": {
+                  "type": ["string", "null"],
+                  "format": "uri"
+                },
+                "image_usage_notes": { "type": ["string", "null"] }
               }
             }
           },

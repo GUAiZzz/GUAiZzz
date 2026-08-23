@@ -52,7 +52,16 @@ Migration must preserve editorial text, art direction, color world, typography b
 
 The ChatGPT automation `Culture & Taste GitHub Daily` previously targeted direct writes to `GUAiZzz/GUAiZzz:gh-pages/culture-taste-daily/`.
 
-Because the audit classifies direct daily auto-publish as BLOCKED, that automation was **paused on 2026-08-23 before the next scheduled run**. It must remain paused until the automation gate in `docs/ARCHITECTURE_DECISIONS.md` is satisfied.
+Pause status is **verified from the connected ChatGPT automation state**, not merely inferred from this document:
+
+- task title: `Culture & Taste GitHub Daily`;
+- task id: `6a87dfb70d248191b797b5665c5a8593`;
+- schedule: daily, 08:30 Asia/Shanghai;
+- `is_enabled`: `false`;
+- pause/disable state last updated: 2026-08-23 22:51 Asia/Shanghai;
+- operator: this user's connected ChatGPT scheduled-task workspace.
+
+Because the audit classifies direct daily auto-publish as BLOCKED, the task must remain disabled until the automation gate in `docs/ARCHITECTURE_DECISIONS.md` is satisfied.
 
 The old prompt remains useful as editorial-generation input, but its direct-publish instructions are not an approved deployment path.
 
@@ -77,7 +86,21 @@ They are complementary teachers, not templates.
 
 The production contract requires a private source ledger and also requires visible reader-facing Sources & Dates. These are not the same artifact.
 
-A public GitHub Pages/source repository must never contain private research notes, internal QA scaffolding, internal scoring, or unpublished editorial inference. Public issue manifests contain only publishable provenance/metadata. The private source ledger stays outside the public repository. Schemas for both sides may be version-controlled publicly; private ledger instances may not.
+A public GitHub Pages/source repository must never contain private research notes, internal QA scaffolding, internal scoring, unpublished editorial inference, or private image-rights evidence. Public issue manifests contain only publishable provenance/metadata. The private source ledger stays outside the public repository. Schemas for both sides may be version-controlled publicly; private ledger instances may not.
+
+Credit alone is not treated as publishing permission. Image/media usage-rights basis must be tracked separately in the private ledger before publication where applicable.
+
+## QA authority
+
+Generator-created manifest fields such as `status`, `qa`, and score are reporting data only; they are not deployment approval.
+
+Future production must distinguish:
+
+- independent deterministic CI evidence for technical checks and render capture;
+- separate editorial/visual review evidence for judgment-heavy requirements;
+- deployment authority that requires the approved evidence gate rather than trusting generator self-report.
+
+No such complete independent evidence/deployment gate exists yet.
 
 ## Explicitly not verified / not complete
 
@@ -85,9 +108,10 @@ A public GitHub Pages/source repository must never contain private research note
 - Original visual assets are not fully restored in migrated web versions.
 - 8/22 has not been migrated into a verified web issue.
 - No independent deterministic CI currently enforces the production contract.
+- No separate editorial/visual approval record is wired into deployment.
 - No dedicated `culture-taste-daily` source repository has been cut over.
 - No approved Pages build-artifact workflow exists yet.
-- Daily production automation is paused pending the new gate.
+- Daily production automation is verified disabled pending the new gate.
 
 ## Safety rule
 
